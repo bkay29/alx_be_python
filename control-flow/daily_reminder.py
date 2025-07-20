@@ -4,18 +4,18 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 match priority:
     case "high":
-        reminder = f"Reminder: '{task}' is a high priority task."
+        priority_text = "a high priority task."
     case "medium":
-        reminder = f"Reminder: '{task}' is a medium priority task."
+        priority_text = "a medium priority task."
     case "low":
-        reminder = f"Reminder: '{task}' is a low priority task."
+        priority_text = "a low priority task."
     case _:
-        reminder = f"Reminder: '{task}' has an unknown priority level."
+        priority_text = "a task with unknown priority."
 
 if time_bound == "yes":
-    reminder += " This task requires immediate attention today!"
+    urgency = " This task requires immediate attention today!"
 else:
-    reminder += " Consider completing it when you have free time."
+    urgency = " Consider completing it when you have free time."
 
-print(reminder)
+print(f"Reminder: '{task}' is {priority_text}{urgency}")
 
