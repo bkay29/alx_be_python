@@ -13,7 +13,7 @@ def main():
     if isinstance(result, str):
         print(result)
     else:
-        print("The result of the division is", result)
+        print("The result of the division is {:.1f}".format(result))
 
 if __name__ == "__main__":
     main()
