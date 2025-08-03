@@ -14,7 +14,7 @@ def main():
     if isinstance(result, str):
         print(result)
     else:
-        print("The result of the division is {:.1f}".format(result))
+        print(f"The result of the division is {result:.1f}")
 
 if __name__ == "__main__":
     main()
